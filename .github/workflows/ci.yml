@@ -67,3 +67,6 @@ jobs:
       
       - name: PHPStan Static Analysis
         run: vendor/bin/phpstan analyse
+      
+      - name: PHP CS Fixer
+        run: vendor/bin/php-cs-fixer fix --dry-run --diff
