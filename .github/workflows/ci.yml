@@ -70,3 +70,7 @@ jobs:
       
       - name: PHP CS Fixer
         run: vendor/bin/php-cs-fixer fix --dry-run --diff
+      
+      - name: Security Check
+        run: 
+          symfony check:security
